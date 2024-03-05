@@ -9,7 +9,10 @@ const ToggleButton = ({ type, alt, colorType, isClicked }) => {
 
   return (
     <button type="button" aria-label={alt} onClick={handleClick}>
-      <img src={`/src/assets/common/${type}-${currentClick}${type === 'heart' && currentClick === false ? `-${colorType}` : ``}.svg`} alt={alt} />
+      <img
+        src={`/assets/common/${type}-${currentClick}${type === 'heart' && currentClick === false ? `-${colorType}` : ``}.svg`}
+        alt={alt}
+      />
     </button>
   );
 };
